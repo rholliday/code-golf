@@ -1,2 +1,3 @@
 # Doesn't seem to care about the trailing space.
-1..100|%{$i=$_;$a="";1..$i|%{if($i%$_-eq0){$a+="$($_) "}};$a}
+# Kind of cheating with the rv again.
+1..100|%{$i=$_;rv a;1..$i|%{if(!($i%$_)){$a+="$_ "}};$a}
