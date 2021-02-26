@@ -1,3 +1,4 @@
+# Removing $e is the exact same character cound so leaving it for now.
 $w=" wood"
 $c="chuck"
 $u=" would"
