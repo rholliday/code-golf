@@ -1,4 +1,4 @@
-$p=@{12="Twelve Drummers Drumming,";11="Eleven Pipers Piping,";10="Ten Lords-a-Leaping,";9="Nine Ladies Dancing,";8="Eight Maids-a-Milking,";7="Seven Swans-a-Swimming,";6="Six Geese-a-Laying,";5="Five Gold Rings,";4="Four Calling Birds,";3="Three French Hens,";2="Two Turtle Doves, and";1="A Partridge in a Pear Tree."}
-$n=@{12="Twelfth";11="Eleventh";10="Tenth";9="Ninth";8="Eighth";7="Seventh";6="Sixth";5="Fifth";4="Fourth";3="Third";2="Second";1="First"}
-1..12|%{"On the $($n[$_]) day of Christmas
-My true love sent to me";$_..1|%{$p[$_]};""}
+$p=@("A Partridge in a Pear Tree.","Two Turtle Doves, and","Three French Hens,","Four Calling Birds,","Five Gold Rings,","Six Geese-a-Laying,","Seven Swans-a-Swimming,","Eight Maids-a-Milking,","Nine Ladies Dancing,","Ten Lords-a-Leaping,","Eleven Pipers Piping,","Twelve Drummers Drumming,")
+$n=@("First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth","Tenth","Eleventh","Twelfth")
+0..11|%{"On the $($n[$_]) day of Christmas
+My true love sent to me";$_..0|%{$p[$_]};""}
